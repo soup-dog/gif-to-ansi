@@ -23,7 +23,6 @@ optional arguments:
                         frame-rate of output
   -so, --show-output    show output
   -sp, --show-progress  display conversion progress
-
 """
 
 
