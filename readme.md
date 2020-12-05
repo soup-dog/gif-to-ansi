@@ -36,8 +36,10 @@ optional arguments:
 ```
 
 ## Examples
-Some examples are located under [/examples](/examples). Display them in any ANSI terminal.
+Some examples are located in [/examples](/examples). Display them in any ANSI terminal.
 
 Bash: ```cat examples/example1.txt```
 
 cmd: ```copy examples\example1.txt con```
+
+![A gif demonstrating example usage](/example.gif)
