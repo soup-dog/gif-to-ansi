@@ -65,7 +65,7 @@ def image_to_text(image: Image, palette=None) -> str:
             character = get_rgb_escape(*image.getpixel((x, y)))
             escape = next(palette[k] for k in palette.keys() if brightness(*image.getpixel((x, y))) < k)
             text += escape + character
-        text += "\n"
+        text += "\n" + ESC + CSI + "0" + SGR_END
 
     return text
 
