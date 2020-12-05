@@ -1,7 +1,7 @@
 """gif to ansi art converter
 A simple python script that converts a gif into ansi art that can be displayed in an ANSI terminal.
 Display converted gif with `while [ true ]; do cat {}; done` in bash or `FOR /L %L IN (0,0,1) DO @(copy {} con)` in cmd.
-Available on GitHub at
+Available on GitHub at https://github.com/soup-dog/gif-to-ansi
 
 prerequisites:
   Pillow (working with 8.0.1)
@@ -73,7 +73,7 @@ def image_to_text(image: Image, palette=None) -> str:
 
 if __name__ == '__main__':
     bar_length = 10
-    info = "ANSI gif made with gif-to-ansi (available on GitHub at )"
+    info = "ANSI gif made with gif-to-ansi (available on GitHub at https://github.com/soup-dog/gif-to-ansi)"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("input_file", type=str, help="path to input file")
@@ -98,7 +98,6 @@ if __name__ == '__main__':
 
     for index, frame in enumerate(frames):
         image_text = image_to_text(frame)
-
         if args.show_output:
             print(RESET_CURSOR + image_text)
 
