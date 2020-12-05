@@ -72,7 +72,7 @@ def image_to_text(image: Image, palette=None) -> str:
 
 if __name__ == '__main__':
     bar_length = 10
-    info = "ANSI gif made with gif-to-ansi (available on GitHub at https://github.com/soup-dog/gif-to-ansi)"
+    info = "ANSI art gif made with gif-to-ansi (available on GitHub at https://github.com/soup-dog/gif-to-ansi)"
 
     parser = argparse.ArgumentParser()
     parser.add_argument("input_file", type=str, help="path to input file")
