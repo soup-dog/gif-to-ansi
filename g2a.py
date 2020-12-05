@@ -38,6 +38,7 @@ CHA_END = "G"
 CUP_END = "H"
 ED_END = "J"
 RESET_CURSOR = ESC + CSI + "1;1" + CUP_END
+HIDE_CURSOR = ESC + CSI + "?25l"
 RESET_DISPLAY = ESC + CSI + "0" + SGR_END + ESC + CSI + "2" + ED_END
 
 
@@ -91,7 +92,7 @@ if __name__ == '__main__':
 
     frames = [frame.resize((frame.size[0] if args.width is None else args.width, frame.size[1] if args.height is None else args.height)) for frame in frames]
 
-    text = info + "\n"
+    text = HIDE_CURSOR + info + "\n"
 
     round_progress = 0
 
